@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import TopBar from '../components/TopBar';
 import './App.css';
 
 class App extends Component {
   render () {
     return (
       <div>
-        <div className='top-bar'>Top bar</div>
+        <TopBar />
         <div className='hero-section'>Hero</div>
         <div className='about-section'>About</div>
         <div className='skills-section'>Skills</div>
