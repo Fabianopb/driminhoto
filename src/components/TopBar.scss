@@ -1,6 +1,8 @@
+@import '../assets/colors';
+
 .top-bar {
   height: 64px;
   padding: 8px;
-  background-color: #5F4E8A;
-  color: white;
+  background-color: $ultra-violet;
+  color: $snow-white;
 }
