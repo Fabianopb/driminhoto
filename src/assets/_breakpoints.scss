@@ -1,0 +1,10 @@
+/*
+Breakpoints:
+- xs: width < 767px
+- sm: 991px > width > 768px
+- md: 992px > width > 1199px
+- lg screen: 1200px > width > 1919px
+- xl: width > 1920px
+*/
+
+$less-than-xs: '(max-width: 767px)';

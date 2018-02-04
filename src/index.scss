@@ -1,4 +1,5 @@
 @import './assets/colors';
+@import './assets/breakpoints';
 
 body {
   margin: 0;
@@ -14,16 +15,8 @@ body {
     flex: 1;
   }
 }
-/*
-Breakpoints:
-- xs: width < 767px
-- sm: 991px > width > 768px
-- md: 992px > width > 1199px
-- lg screen: 1200px > width > 1919px
-- xl: width > 1920px
-*/
 
-@media (max-width: 767px) {
+@media #{$less-than-xs} {
   *[hide-xs='true'] {
     display: none;
   }
