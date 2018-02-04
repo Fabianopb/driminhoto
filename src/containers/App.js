@@ -4,7 +4,7 @@ import HeroSection from '../components/HeroSection';
 import AboutSection from '../components/AboutSection';
 import SkillsSection from '../components/SkillsSection';
 import ProjectsSection from '../components/ProjectsSection';
-import './App.css';
+import AppFooter from '../components/AppFooter';
 
 class App extends Component {
   render () {
@@ -15,7 +15,7 @@ class App extends Component {
         <AboutSection />
         <SkillsSection />
         <ProjectsSection />
-        <div className='app-footer'>Footer</div>
+        <AppFooter />
       </div>
     );
   }

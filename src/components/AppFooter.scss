@@ -1,0 +1,11 @@
+@import '../assets/colors';
+
+.app-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+  height: 128px;
+  background-color: $ultra-violet;
+  color: $snow-white;
+}
