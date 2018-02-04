@@ -34,8 +34,8 @@ class ProjectsSection extends Component {
           <Divider horizontal><h2>Meus principais projetos</h2></Divider>
           <div className='projects-grid'>
             {
-              projects.map(project =>
-                <div className='project-card'>
+              projects.map((project, index) =>
+                <div key={index} className='project-card'>
                   <img src={project.imageSrc} alt='project' />
                   <div className='overlay'>
                     <div className='project-name'>{ project.name }</div>

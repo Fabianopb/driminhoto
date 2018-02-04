@@ -29,12 +29,12 @@ class SkillsSection extends Component {
           <Divider horizontal><h2>Meus principais skills</h2></Divider>
           <div className='skills-container'>
             <div className='names'>
-              { skills.map(skill => <div>{ skill.name }</div>) }
+              { skills.map((skill, index) => <div key={index}>{ skill.name }</div>) }
             </div>
             <div className='ratings'>
               {
-                skills.map(skill =>
-                  <div className='stars'>
+                skills.map((skill, index) =>
+                  <div key={index} className='stars'>
                     <Rating defaultRating={skill.rating} maxRating={5} disabled icon='star' />
                   </div>
                 )
