@@ -5,8 +5,15 @@ body {
   padding: 0;
   font-family: sans-serif;
   color: $outer-space;
-}
 
+  h2 {
+    color: $snow-white-20;
+  }
+
+  .flex-1 {
+    flex: 1;
+  }
+}
 /*
 Breakpoints:
 - xs: width < 767px
@@ -17,7 +24,7 @@ Breakpoints:
 */
 
 @media (max-width: 767px) {
-  *[hide-xs] {
+  *[hide-xs='true'] {
     display: none;
   }
 }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import TopBar from '../components/TopBar';
 import HeroSection from '../components/HeroSection';
+import AboutSection from '../components/AboutSection';
 import './App.css';
 
 class App extends Component {
@@ -9,7 +10,7 @@ class App extends Component {
       <div>
         <TopBar />
         <HeroSection />
-        <div className='about-section'>About</div>
+        <AboutSection />
         <div className='skills-section'>Skills</div>
         <div className='projects-section'>Projects</div>
         <div className='app-footer'>Footer</div>

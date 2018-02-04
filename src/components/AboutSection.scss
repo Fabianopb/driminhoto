@@ -1,0 +1,30 @@
+@import '../assets/colors';
+
+.about-section {
+  margin-top: 32px;
+  display: flex;
+
+  .content {
+    flex: 4;
+    display: flex;
+    padding: 16px;
+
+    .photo-container {
+      flex: 1;
+      align-self: start;
+      max-width: 160px;
+      margin-right: 16px;
+      padding: 8px;
+      border: 1px solid $snow-white;
+      border-radius: 8px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .description {
+      flex: 3;
+    }
+  }
+}
