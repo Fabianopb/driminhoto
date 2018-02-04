@@ -27,4 +27,15 @@
       flex: 3;
     }
   }
+
+  @media (max-width: 767px) {
+    .content {
+      flex-direction: column;
+
+      .photo-container {
+        align-self: center;
+        margin-bottom: 16px;
+      }
+    }
+  }
 }

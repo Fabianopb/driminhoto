@@ -10,7 +10,7 @@ class AboutSection extends Component {
         <div className='flex-1' hide-xs='true' />
         <div className='content'>
           <div className='photo-container'>
-            <img src={avatar} />
+            <img src={avatar} alt='avatar' />
           </div>
           <div className='description'>
             <h2 className='title'>Olá</h2>
