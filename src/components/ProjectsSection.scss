@@ -1,4 +1,5 @@
 @import '../assets/colors';
+@import '../assets/breakpoints';
 
 .projects-section {
   margin-top: 32px;
@@ -19,6 +20,7 @@
 
         img {
           width: 100%;
+          border-radius: 8px;
         }
 
         .overlay {
@@ -32,6 +34,11 @@
           height: 98%;
           background-color: $snow-white;
           opacity: 0;
+          border-radius: 8px;
+
+          .project-name {
+            font-size: 1.4rem;
+          }
         }
 
         .overlay:hover {
@@ -39,6 +46,18 @@
           transition: 0.5s ease-in-out;
         }
       }
+    }
+  }
+
+  @media #{$less-than-sm} {
+    .project-card {
+      width: calc(50% - 16px) !important;
+    }
+  }
+
+  @media #{$less-than-xs} {
+    .project-card {
+      width: 100% !important;
     }
   }
 }

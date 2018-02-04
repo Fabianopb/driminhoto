@@ -15,25 +15,25 @@ class ProjectsSection extends Component {
             <div className='project-card'>
               <img src={projectImage} alt='project' />
               <div className='overlay'>
-                <div>Nome do projeto</div>
+                <div className='project-name'>Nome do projeto</div>
               </div>
             </div>
             <div className='project-card'>
               <img src={projectImage} alt='project' />
               <div className='overlay'>
-                <div>Nome do projeto</div>
+                <div className='project-name'>Nome do projeto</div>
               </div>
             </div>
             <div className='project-card'>
               <img src={projectImage} alt='project' />
               <div className='overlay'>
-                <div>Nome do projeto</div>
+                <div className='project-name'>Nome do projeto</div>
               </div>
             </div>
             <div className='project-card'>
               <img src={projectImage} alt='project' />
               <div className='overlay'>
-                <div>Nome do projeto</div>
+                <div className='project-name'>Nome do projeto</div>
               </div>
             </div>
           </div>
