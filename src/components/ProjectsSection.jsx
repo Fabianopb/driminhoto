@@ -5,37 +5,44 @@ import './ProjectsSection.css';
 
 class ProjectsSection extends Component {
   render () {
-    // const biography = 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.';
+    const projects = [
+      {
+        imageSrc: projectImage,
+        name: 'Nome do projeto 1'
+      },
+      {
+        imageSrc: projectImage,
+        name: 'Nome do projeto 2'
+      },
+      {
+        imageSrc: projectImage,
+        name: 'Nome do projeto 3'
+      },
+      {
+        imageSrc: projectImage,
+        name: 'Nome do projeto 4'
+      },
+      {
+        imageSrc: projectImage,
+        name: 'Nome do projeto 5'
+      }
+    ];
     return (
       <div className='projects-section'>
         <div className='flex-1' hide-xs='true' />
         <div className='content'>
           <Divider horizontal><h2>Meus principais projetos</h2></Divider>
           <div className='projects-grid'>
-            <div className='project-card'>
-              <img src={projectImage} alt='project' />
-              <div className='overlay'>
-                <div className='project-name'>Nome do projeto</div>
-              </div>
-            </div>
-            <div className='project-card'>
-              <img src={projectImage} alt='project' />
-              <div className='overlay'>
-                <div className='project-name'>Nome do projeto</div>
-              </div>
-            </div>
-            <div className='project-card'>
-              <img src={projectImage} alt='project' />
-              <div className='overlay'>
-                <div className='project-name'>Nome do projeto</div>
-              </div>
-            </div>
-            <div className='project-card'>
-              <img src={projectImage} alt='project' />
-              <div className='overlay'>
-                <div className='project-name'>Nome do projeto</div>
-              </div>
-            </div>
+            {
+              projects.map(project =>
+                <div className='project-card'>
+                  <img src={project.imageSrc} alt='project' />
+                  <div className='overlay'>
+                    <div className='project-name'>{ project.name }</div>
+                  </div>
+                </div>
+              )
+            }
           </div>
         </div>
         <div className='flex-1' hide-xs='true' />

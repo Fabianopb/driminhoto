@@ -4,7 +4,24 @@ import './SkillsSection.css';
 
 class SkillsSection extends Component {
   render () {
-    // const biography = 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.';
+    const skills = [
+      {
+        name: 'Solução de problemas',
+        rating: 5
+      },
+      {
+        name: 'Criação de textos',
+        rating: 5
+      },
+      {
+        name: 'Organização',
+        rating: 4
+      },
+      {
+        name: 'Design gráfico',
+        rating: 3
+      }
+    ];
     return (
       <div className='skills-section'>
         <div className='flex-1' hide-xs='true' />
@@ -12,24 +29,16 @@ class SkillsSection extends Component {
           <Divider horizontal><h2>Meus principais skills</h2></Divider>
           <div className='skills-container'>
             <div className='names'>
-              <div>Solução de problemas</div>
-              <div>Criação de textos</div>
-              <div>Organização</div>
-              <div>Design gráfico</div>
+              { skills.map(skill => <div>{ skill.name }</div>) }
             </div>
             <div className='ratings'>
-              <div className='stars'>
-                <Rating defaultRating={5} maxRating={5} disabled icon='star' />
-              </div>
-              <div className='stars'>
-                <Rating defaultRating={5} maxRating={5} disabled icon='star' />
-              </div>
-              <div className='stars'>
-                <Rating defaultRating={4} maxRating={5} disabled icon='star' />
-              </div>
-              <div className='stars'>
-                <Rating defaultRating={3} maxRating={5} disabled icon='star' />
-              </div>
+              {
+                skills.map(skill =>
+                  <div className='stars'>
+                    <Rating defaultRating={skill.rating} maxRating={5} disabled icon='star' />
+                  </div>
+                )
+              }
             </div>
           </div>
         </div>
