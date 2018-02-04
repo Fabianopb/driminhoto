@@ -3,6 +3,7 @@ import TopBar from '../components/TopBar';
 import HeroSection from '../components/HeroSection';
 import AboutSection from '../components/AboutSection';
 import SkillsSection from '../components/SkillsSection';
+import ProjectsSection from '../components/ProjectsSection';
 import './App.css';
 
 class App extends Component {
@@ -13,7 +14,7 @@ class App extends Component {
         <HeroSection />
         <AboutSection />
         <SkillsSection />
-        <div className='projects-section'>Projects</div>
+        <ProjectsSection />
         <div className='app-footer'>Footer</div>
       </div>
     );
