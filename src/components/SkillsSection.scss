@@ -1,0 +1,29 @@
+.skills-section {
+  margin-top: 32px;
+  display: flex;
+
+  .content {
+    flex: 4;
+    padding: 16px;
+
+    .skills-container {
+      margin-top: 24px;
+      display: flex;
+      justify-content: center;
+
+      .names, .ratings {
+        display: flex;
+        flex-direction: column;
+
+        > div {
+          flex: 1;
+          padding: 8px 0;
+        }
+      }
+
+      .ratings {
+        margin-left: 16px;
+      }
+    }
+  }
+}
