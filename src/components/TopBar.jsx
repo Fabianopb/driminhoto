@@ -5,7 +5,7 @@ class TopBar extends Component {
   render () {
     return (
       <div className='top-bar'>
-        Top Bar
+        <div className='logo'>Adriana Minhoto</div>
       </div>
     );
   }

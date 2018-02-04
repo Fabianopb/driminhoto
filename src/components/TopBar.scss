@@ -1,8 +1,16 @@
 @import '../assets/colors';
 
 .top-bar {
-  height: 64px;
+  display: flex;
+  align-items: center;
+  height: 48px;
   padding: 8px;
   background-color: $ultra-violet;
   color: $snow-white;
+
+  .logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 8px;
+  }
 }
