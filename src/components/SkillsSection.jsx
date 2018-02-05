@@ -26,7 +26,7 @@ class SkillsSection extends Component {
       <div className='skills-section'>
         <div className='flex-1' hide-xs='true' />
         <div className='content'>
-          <Divider horizontal><h2>Meus principais skills</h2></Divider>
+          <Divider horizontal><h2>Principais skills</h2></Divider>
           <div className='skills-container'>
             <div className='names'>
               { skills.map((skill, index) => <div key={index}>{ skill.name }</div>) }

@@ -31,7 +31,7 @@ class ProjectsSection extends Component {
       <div className='projects-section'>
         <div className='flex-1' hide-xs='true' />
         <div className='content'>
-          <Divider horizontal><h2>Meus principais projetos</h2></Divider>
+          <Divider horizontal><h2>Principais projetos</h2></Divider>
           <div className='projects-grid'>
             {
               projects.map((project, index) =>
