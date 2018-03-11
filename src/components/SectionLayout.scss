@@ -1,0 +1,19 @@
+@import '../assets/breakpoints';
+
+:local(.sectionLayout) {
+  display: flex;
+
+  .side-space {
+    flex: 1;
+  }
+
+  .central-content {
+    flex: 6;
+  }
+
+  @media #{$less-than-xs} {
+    *[hide-xs='true'] {
+      display: none;
+    }
+  }
+}

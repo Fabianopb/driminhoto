@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Divider, Rating } from 'semantic-ui-react';
-import './SkillsSection.css';
+import SectionLayout from './SectionLayout';
+import styles from './SkillsSection.css';
 
 class SkillsSection extends Component {
   render () {
@@ -23,27 +24,29 @@ class SkillsSection extends Component {
       }
     ];
     return (
-      <div className='skills-section'>
-        <div className='flex-1' hide-xs='true' />
-        <div className='content'>
-          <Divider horizontal><h2>Principais skills</h2></Divider>
-          <div className='skills-container'>
-            <div className='names'>
-              { skills.map((skill, index) => <div key={index}>{ skill.name }</div>) }
-            </div>
-            <div className='ratings'>
-              {
-                skills.map((skill, index) =>
-                  <div key={index} className='stars'>
-                    <Rating defaultRating={skill.rating} maxRating={5} disabled icon='star' />
-                  </div>
-                )
-              }
+      <SectionLayout>
+        <div className={styles.skillsSection}>
+          <div className='flex-1' hide-xs='true' />
+          <div className='content'>
+            <Divider horizontal><h2>Principais skills</h2></Divider>
+            <div className='skills-container'>
+              <div className='names'>
+                { skills.map((skill, index) => <div key={index}>{ skill.name }</div>) }
+              </div>
+              <div className='ratings'>
+                {
+                  skills.map((skill, index) =>
+                    <div key={index} className='stars'>
+                      <Rating defaultRating={skill.rating} maxRating={5} disabled icon='star' />
+                    </div>
+                  )
+                }
+              </div>
             </div>
           </div>
+          <div className='flex-1' hide-xs='true' />
         </div>
-        <div className='flex-1' hide-xs='true' />
-      </div>
+      </SectionLayout>
     );
   }
 }

@@ -1,21 +1,22 @@
 @import '../assets/colors';
 @import '../assets/breakpoints';
 
-.projects-section {
+:local(.projectsSection) {
   margin-top: 32px;
   display: flex;
 
   .content {
-    flex: 4;
+    flex: 6;
     padding: 16px;
 
     .projects-grid {
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
 
       .project-card {
         position: relative;
-        width: calc(33.33% - 16px);
+        max-width: 304px;
         margin: 8px;
 
         img {
@@ -49,15 +50,15 @@
     }
   }
 
-  @media #{$less-than-sm} {
-    .project-card {
-      width: calc(50% - 16px) !important;
-    }
-  }
-
-  @media #{$less-than-xs} {
-    .project-card {
-      width: 100% !important;
-    }
-  }
+  // @media #{$less-than-sm} {
+  //   .project-card {
+  //     width: calc(50% - 16px) !important;
+  //   }
+  // }
+  //
+  // @media #{$less-than-xs} {
+  //   .project-card {
+  //     width: 100% !important;
+  //   }
+  // }
 }

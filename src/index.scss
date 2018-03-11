@@ -10,14 +10,4 @@ body {
   h1, h2, h3 {
     color: $snow-white-20;
   }
-
-  .flex-1 {
-    flex: 1;
-  }
-}
-
-@media #{$less-than-xs} {
-  *[hide-xs='true'] {
-    display: none;
-  }
 }

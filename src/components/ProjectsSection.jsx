@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Divider } from 'semantic-ui-react';
+import SectionLayout from './SectionLayout';
 import projectImage from '../assets/project-image.png';
-import './ProjectsSection.css';
+import styles from './ProjectsSection.css';
 
 class ProjectsSection extends Component {
   render () {
@@ -28,25 +29,27 @@ class ProjectsSection extends Component {
       }
     ];
     return (
-      <div className='projects-section'>
-        <div className='flex-1' hide-xs='true' />
-        <div className='content'>
-          <Divider horizontal><h2>Principais projetos</h2></Divider>
-          <div className='projects-grid'>
-            {
-              projects.map((project, index) =>
-                <div key={index} className='project-card'>
-                  <img src={project.imageSrc} alt='project' />
-                  <div className='overlay'>
-                    <div className='project-name'>{ project.name }</div>
+      <SectionLayout>
+        <div className={styles.projectsSection}>
+          <div className='flex-1' hide-xs='true' />
+          <div className='content'>
+            <Divider horizontal><h2>Principais projetos</h2></Divider>
+            <div className='projects-grid'>
+              {
+                projects.map((project, index) =>
+                  <div key={index} className='project-card'>
+                    <img src={project.imageSrc} alt='project' />
+                    <div className='overlay'>
+                      <div className='project-name'>{ project.name }</div>
+                    </div>
                   </div>
-                </div>
-              )
-            }
+                )
+              }
+            </div>
           </div>
+          <div className='flex-1' hide-xs='true' />
         </div>
-        <div className='flex-1' hide-xs='true' />
-      </div>
+      </SectionLayout>
     );
   }
 }

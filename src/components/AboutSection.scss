@@ -1,12 +1,12 @@
 @import '../assets/colors';
 @import '../assets/breakpoints';
 
-.about-section {
+:local(.aboutSection) {
   margin-top: 32px;
   display: flex;
 
   .content {
-    flex: 4;
+    flex: 6;
     display: flex;
     padding: 16px;
 

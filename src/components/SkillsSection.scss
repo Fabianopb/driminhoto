@@ -1,9 +1,9 @@
-.skills-section {
+:local(.skillsSection) {
   margin-top: 32px;
   display: flex;
 
   .content {
-    flex: 4;
+    flex: 6;
     padding: 16px;
 
     .skills-container {
