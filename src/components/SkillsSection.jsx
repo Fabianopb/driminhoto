@@ -1,28 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Divider, Rating } from 'semantic-ui-react';
 import SectionLayout from './SectionLayout';
 import styles from './SkillsSection.css';
 
-const skills = [
-  {
-    name: 'Solução de problemas',
-    rating: 5
-  },
-  {
-    name: 'Criação de textos',
-    rating: 5
-  },
-  {
-    name: 'Organização',
-    rating: 4
-  },
-  {
-    name: 'Design gráfico',
-    rating: 3
-  }
-];
-
-const SkillsSection = () => (
+const SkillsSection = ({skills}) => (
   <SectionLayout>
     <div className={styles.skillsSection}>
       <div className='flex-1' hide-xs='true' />
@@ -47,5 +29,9 @@ const SkillsSection = () => (
     </div>
   </SectionLayout>
 );
+
+SkillsSection.propTypes = {
+  skills: PropTypes.array.isRequired
+};
 
 export default SkillsSection;

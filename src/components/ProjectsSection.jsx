@@ -1,33 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Divider } from 'semantic-ui-react';
 import SectionLayout from './SectionLayout';
-import projectImage from '../assets/project-image.png';
 import styles from './ProjectsSection.css';
 
-const projects = [
-  {
-    imageSrc: projectImage,
-    name: 'Nome do projeto 1'
-  },
-  {
-    imageSrc: projectImage,
-    name: 'Nome do projeto 2'
-  },
-  {
-    imageSrc: projectImage,
-    name: 'Nome do projeto 3'
-  },
-  {
-    imageSrc: projectImage,
-    name: 'Nome do projeto 4'
-  },
-  {
-    imageSrc: projectImage,
-    name: 'Nome do projeto 5'
-  }
-];
-
-const ProjectsSection = () => (
+const ProjectsSection = ({projects}) => (
   <SectionLayout>
     <div className={styles.projectsSection}>
       <div className='flex-1' hide-xs='true' />
@@ -50,5 +27,9 @@ const ProjectsSection = () => (
     </div>
   </SectionLayout>
 );
+
+ProjectsSection.propTypes = {
+  projects: PropTypes.array.isRequired
+};
 
 export default ProjectsSection;

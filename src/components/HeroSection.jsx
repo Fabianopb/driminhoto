@@ -1,10 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import SectionLayout from './SectionLayout';
 import styles from './HeroSection.css';
 
-const heroDescription = 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.';
-
-const HeroSection = () => (
+const HeroSection = ({heroDescription}) => (
   <div className={styles.heroSection}>
     <SectionLayout>
       <div className='content'>
@@ -17,5 +16,9 @@ const HeroSection = () => (
     </SectionLayout>
   </div>
 );
+
+HeroSection.propTypes = {
+  heroDescription: PropTypes.string.isRequired
+};
 
 export default HeroSection;

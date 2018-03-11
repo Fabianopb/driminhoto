@@ -1,11 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import SectionLayout from './SectionLayout';
 import styles from './AboutSection.css';
 import avatar from '../assets/avatar.png';
 
-const biography = 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.';
-
-const AboutSection = () => (
+const AboutSection = ({biography}) => (
   <SectionLayout>
     <div className={styles.aboutSection}>
       <div className='content'>
@@ -20,5 +19,9 @@ const AboutSection = () => (
     </div>
   </SectionLayout>
 );
+
+AboutSection.propTypes = {
+  biography: PropTypes.string.isRequired
+};
 
 export default AboutSection;
