@@ -1,6 +1,6 @@
 @import '../assets/colors';
 
-:local(.heroSection) {
+.heroSection {
   background-color: $ultra-violet-40;
 
   .content {
@@ -19,7 +19,7 @@
       text-align: center;
     }
 
-    .button-container {
+    .buttonContainer {
       flex: 1;
       display: flex;
       justify-content: center;

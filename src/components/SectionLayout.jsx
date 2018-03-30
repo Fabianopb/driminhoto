@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './SectionLayout.css';
+import styles from './SectionLayout.module.scss';
 
 const SectionLayout = ({children}) => (
   <div className={styles.sectionLayout}>
-    <div className='side-space' hide-xs='true' />
-    <div className='central-content'>
+    <div className={styles.sideSpace} hide-xs='true' />
+    <div className={styles.centralContent}>
       {children}
     </div>
-    <div className='side-space' hide-xs='true' />
+    <div className={styles.sideSpace} hide-xs='true' />
   </div>
 );
 

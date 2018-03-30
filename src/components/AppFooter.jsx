@@ -1,8 +1,8 @@
 import React from 'react';
-import './AppFooter.css';
+import styles from './AppFooter.module.scss';
 
 const AppFooter = () => (
-  <div className='app-footer'>
+  <div className={styles.appFooter}>
     &copy; Adriana Minhoto
   </div>
 );

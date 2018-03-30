@@ -1,9 +1,9 @@
 import React from 'react';
-import './TopBar.css';
+import styles from './TopBar.module.scss';
 
 const TopBar = () => (
-  <div className='top-bar'>
-    <div className='logo'>Adriana Minhoto</div>
+  <div className={styles.topBar}>
+    <div className={styles.logo}>Adriana Minhoto</div>
   </div>
 );
 

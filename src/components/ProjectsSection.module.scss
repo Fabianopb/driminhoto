@@ -1,7 +1,7 @@
 @import '../assets/colors';
 @import '../assets/breakpoints';
 
-:local(.projectsSection) {
+.projectsSection {
   margin-top: 32px;
   display: flex;
 
@@ -9,12 +9,12 @@
     flex: 6;
     padding: 16px;
 
-    .projects-grid {
+    .projectsGrid {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
 
-      .project-card {
+      .projectCard {
         position: relative;
         max-width: 304px;
         margin: 8px;
@@ -37,7 +37,7 @@
           opacity: 0;
           border-radius: 8px;
 
-          .project-name {
+          .projectName {
             font-size: 1.4rem;
           }
         }

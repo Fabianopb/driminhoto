@@ -1,13 +1,13 @@
 @import '../assets/breakpoints';
 
-:local(.sectionLayout) {
+.sectionLayout {
   display: flex;
 
-  .side-space {
+  .sideSpace {
     flex: 1;
   }
 
-  .central-content {
+  .centralContent {
     flex: 6;
   }
 

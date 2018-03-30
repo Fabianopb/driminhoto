@@ -1,7 +1,7 @@
 @import '../assets/colors';
 @import '../assets/breakpoints';
 
-:local(.aboutSection) {
+.aboutSection {
   margin-top: 32px;
   display: flex;
 
@@ -10,7 +10,7 @@
     display: flex;
     padding: 16px;
 
-    .photo-container {
+    .photoContainer {
       flex: 1;
       align-self: start;
       max-width: 160px;
